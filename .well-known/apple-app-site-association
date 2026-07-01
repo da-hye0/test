@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "SP2LGXH6H7.info.todaktodot",
+                "paths": ["/share.html", "/share", "/share.html?*", "/share?*"]
+            }
+        ]
+    }
+}
