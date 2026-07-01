@@ -13,8 +13,8 @@
     <script>
         var ua = navigator.userAgent;
         var isAndroid = /android/i.test(ua);
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
         
+        // data 파라미터 그대로 전달 (난독화된 상태)
         var deepLink = "todaktodot://share" + window.location.search;
         var playStoreURL = "https://play.google.com/store/apps/details?id=info.towdak.towdot";
         var appStoreURL = "https://apps.apple.com/kr/app/id6759151979";
