@@ -10,12 +10,23 @@
 </head>
 <body>
     <script>
+        var ua = navigator.userAgent;
+        var isAndroid = /android/i.test(ua);
+        var isIOS = /iPhone|iPad|iPod/i.test(ua);
+        
         var deepLink = "todaktodot://share" + window.location.search;
+        var playStoreURL = "https://play.google.com/store/apps/details?id=info.towdak.towdot";
+        var appStoreURL = "https://apps.apple.com/kr/app/id6759151979";
+        
         window.location.href = deepLink;
         
         setTimeout(function() {
-            window.location.href = "https://apps.apple.com/kr/app/id6759151979";
-        }, 1000);
+            if (isAndroid) {
+                window.location.href = playStoreURL;
+            } else {
+                window.location.href = appStoreURL;
+            }
+        }, 1500);
     </script>
     <p>앱으로 이동 중...</p>
 </body>
